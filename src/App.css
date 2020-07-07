@@ -3,7 +3,7 @@ body {
 }
 
 .Entire {
-  width: 35%;
+  width: 33%;
   margin: 0 auto;
 }
 
@@ -51,4 +51,15 @@ body {
 
 .person-name p {
   margin: 10px 0;
+}
+
+.buttons {
+  margin: 0 70px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.buttons input:focus {
+  outline: none;
 }

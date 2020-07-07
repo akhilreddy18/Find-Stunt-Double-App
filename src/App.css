@@ -2,12 +2,12 @@ body {
   background-color: whitesmoke;
 }
 
-.Entire {
+.App {
   width: 33%;
   margin: 0 auto;
 }
 
-.App {
+.Container {
   background-color: white;
   height: 75vh;
   width: 100%;

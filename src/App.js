@@ -1,5 +1,9 @@
 import React from 'react';
 import './App.css';
+import data from './data.json';
+import Header from './Header';
+import Card from './Card';
+import Buttons from './Buttons';
 
 function App() {
 
@@ -10,26 +14,21 @@ function App() {
   function Like(){
     console.log("clicked");
   }
+
+  const people = data;
+
   return (
-    <div className="Entire">
-      <div className="App">
-        <div className="header">
-          <img src="/images/logo.jpg" height="80" alt="logo"></img>
-          <h3>Position: Stunt double</h3>
-        </div>
-        <div className="card">
-          <div className="person-photo">
-            <img src="./images/keanu.jpg" alt="keanu"></img>
-          </div>
-          <div className="person-name">
-            <p>Akhil</p>
-          </div>
-        </div>
+    <div className="App">
+      <div className="Container">
+        <Header />
+        <Card 
+        people = {people}
+        />
       </div>
-      <div className="buttons">
-      <input type="image" name="submit" src="./images/dislike.png" width="40px" alt="Dislike button" onClick={Dislike}></input>
-      <input type="image" name="submit" src="./images/like.png" width="50px" alt="Like button" onClick={Like}></input>
-      </div>
+      <Buttons
+      Dislike = {Dislike}
+      Like = {Like}
+      />
     </div>
   );
 }

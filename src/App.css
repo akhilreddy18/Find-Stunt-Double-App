@@ -1,0 +1,54 @@
+body {
+  background-color: whitesmoke;
+}
+
+.Entire {
+  width: 35%;
+  margin: 0 auto;
+}
+
+.App {
+  background-color: white;
+  height: 75vh;
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+
+.header {
+  background-color: white;
+}
+
+.header img {
+  display: block;
+  margin: 0 auto;
+}
+
+.header h3 {
+  text-align: center;
+  padding: 0;
+  margin: 10px 0;
+}
+
+.card {
+  background-color: white;
+  height: 70%;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.card img {
+  width: 100%;
+  margin: 0 auto;
+  display: block;
+}
+
+.person-name {
+  font-weight: bold;
+  font-size: 30px;
+  margin: 0
+}
+
+.person-name p {
+  margin: 10px 0;
+}

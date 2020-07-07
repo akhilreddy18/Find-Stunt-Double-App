@@ -55,11 +55,19 @@ body {
 
 .buttons {
   margin: 0 70px;
-  margin-top: 20px;
+  margin-top: 60px;
   display: flex;
   justify-content: space-around;
 }
 
 .buttons input:focus {
   outline: none;
+}
+
+.list-complete {
+  margin: 30% auto;
+}
+
+.list-complete h3 {
+  text-align: center;
 }

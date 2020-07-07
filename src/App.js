@@ -1,21 +1,19 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './App.css';
 import data from './data.json';
 import Header from './Header';
 import Card from './Card';
-import Buttons from './Buttons';
 
 function App() {
 
-  function Dislike(){
-    console.log("clicked");
+  const [people, updateList] = useState(data);
+
+  function handleClick(userId){
+    updateList(removePerson(people, userId));
   }
 
-  function Like(){
-    console.log("clicked");
-  }
-
-  const people = data;
+  const removePerson = (remainingPeople, userId) =>
+  remainingPeople.filter(user => user.id !== userId);
 
   return (
     <div className="App">
@@ -23,12 +21,9 @@ function App() {
         <Header />
         <Card 
         people = {people}
+        handleClick = {handleClick}
         />
       </div>
-      <Buttons
-      Dislike = {Dislike}
-      Like = {Like}
-      />
     </div>
   );
 }
